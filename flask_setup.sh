@@ -26,7 +26,7 @@ command -v virtualenv || { echo "\nInstalling virtualenv ...\n"; pip install vir
 mkdir -p "$1"
 cd "$1"
 virtualenv venv
-pip install Flask
 source venv/bin/activate
+pip install Flask
 
 echo "\nSuccess! You now have a flask installed in a virtualenv under $1/venv"
